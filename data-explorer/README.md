@@ -6,4 +6,4 @@ to start the data explorer:
 
 `python -m SimpleHTTPServer`
 
-- go into a web browser and open [http://localhost:8000]
+- go into a web browser and open [http://localhost:8000](http://localhost:8000)
