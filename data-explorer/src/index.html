@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Data Explorer</title>
+
+	<link rel="stylesheet" type="text/css" href="lib/datatables/jquery.dataTables.min.css">
+	<style type="text/css">
+		#filteredTable_filter {
+			float: none;
+			text-align: left;
+			margin-bottom: 40px;
+		}
+		#filteredTable_filter input[type=search] {
+			font-size: 50px;
+			height: 50px;
+			line-height: 50px;
+			width: 400px;
+		}
+		#js-email-export-div {
+			background: #eee;
+			padding: 30px;
+			margin-top: 50px;
+			font-size: 14px;
+		}
+	</style>
+
+	<script type="text/javascript" src="lib/jquery-1.12.0.min.js"></script>
+	<script type="text/javascript" src="lib/underscore-min.js"></script>
+	<script type="text/javascript" src="lib/backbone.js"></script>
+
+	<script type="text/javascript" src="lib/datatables/jquery.dataTables.min.js"></script>
+	<script type="text/javascript" src="lib/papaparse.min.js"></script>
+
+	<script type="text/javascript" src="js/app.js"></script>
+	<script type="text/javascript" src="js/rowmodel.js"></script>
+	<script type="text/javascript" src="js/tableview.js"></script>
+
+	<script type="text/javascript">
+		$(function() {
+			window.app = new App({
+			});
+			window.app.initialize();
+		});
+	</script>
+</head>
+<body>
+
+<table id="filteredTable" class="display" width="100%"></table>
+
+</body>
+</html>
